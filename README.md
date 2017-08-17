@@ -1,6 +1,6 @@
 @mitchallen/react-simple-component
 ==
-SimpleComponent React component
+SimpleComponent React component 
 --
 
 <p align="left">
