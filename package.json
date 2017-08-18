@@ -4,10 +4,10 @@
   "description": "SimpleComponent component",
   "main": "build/index.js",
   "scripts": {
-    "pretest": "npm run build",
-    "test": "mocha --compilers js:babel-register --require ./test/helpers.js --require ./test/dom.js --recursive",
+    "//pretest": "npm run build",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register --require ./test/helpers.js --require ./test/dom.js --recursive",
     "start": "webpack --watch",
-    "build": "webpack -p",
+    "build": "./node_modules/.bin/webpack -p",
     "tdd": "npm test -- --watch",
     "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist"
   },
