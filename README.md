@@ -4,8 +4,8 @@ SimpleComponent React component
 --
 
 <p align="left">
-  <a href="https://travis-ci.org/mitchallen/react-simple-component">
-    <img src="https://img.shields.io/travis/mitchallen/react-simple-component.svg?style=flat-square" alt="Continuous Integration">
+  <a href="https://circleci.com/gh/mitchallen/react-simple-component">
+    <img src="https://img.shields.io/circleci/project/github/mitchallen/react-simple-component.svg" alt="Continuous Integration">
   </a>
   <a href="https://codecov.io/gh/mitchallen/react-simple-component">
     <img src="https://codecov.io/gh/mitchallen/react-simple-component/branch/master/graph/badge.svg" alt="Coverage Status">
