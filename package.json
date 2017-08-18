@@ -4,7 +4,7 @@
   "description": "SimpleComponent component",
   "main": "build/index.js",
   "scripts": {
-    "//pretest": "npm run build",
+    "pretest": "npm run build",
     "test": "./node_modules/.bin/mocha --compilers js:babel-register --require ./test/helpers.js --require ./test/dom.js --recursive",
     "start": "webpack --watch",
     "build": "./node_modules/.bin/webpack -p",
