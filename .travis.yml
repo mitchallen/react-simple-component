@@ -2,14 +2,14 @@ language: node_js
 node_js:
   - "stable"
 before_install:
-  - npm install -g jest jest-cli
+  # - npm install -g jest jest-cli
 script:
   - mkdir build
-  - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
-  - npm test
+  - ./node_modules/.bin/webpack -p
+  # - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
+  # - npm test
   # - pwd
   # - ls -ls
-  # - ./node_modules/.bin/webpack -p
   # - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
   # - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js 
   # - webpack ./src/index.js
