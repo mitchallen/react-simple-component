@@ -7,11 +7,11 @@ script:
   - mkdir build
   - pwd
   - ls -ls
-  - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
+  - webpack -p
+  # - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
   # - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js 
   # - webpack ./src/index.js
   # - webpack -p -d --display-error-details --display-reasons --display-modules --progress
-  # - webpack -p
   # - npm run test-coverage
 after_success:
   - bash <(curl -s https://codecov.io/bash)
