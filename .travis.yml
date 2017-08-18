@@ -5,7 +5,9 @@ before_install:
   - npm install -g jest jest-cli
 script:
   - pwd
-  - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
+  - ls -ls
+  - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js 
+  # - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
   # - webpack ./src/index.js
   # - webpack -p -d --display-error-details --display-reasons --display-modules --progress
   # - webpack -p
