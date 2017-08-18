@@ -2,13 +2,13 @@ language: node_js
 node_js:
   - "stable"
 before_install:
-- npm install -g jest jest-cli
+  - npm install -g jest jest-cli
 script:
-  pwd
-  ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
-  # webpack ./src/index.js
-  # webpack -p -d --display-error-details --display-reasons --display-modules --progress
-  # webpack -p
+  - pwd
+  - ./node_modules/.bin/babel --plugins transform-react-jsx ./src/index.js > ./build/index.js
+  # - webpack ./src/index.js
+  # - webpack -p -d --display-error-details --display-reasons --display-modules --progress
+  # - webpack -p
   # - npm run test-coverage
 after_success:
   - bash <(curl -s https://codecov.io/bash)
